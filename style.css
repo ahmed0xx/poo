@@ -1,0 +1,864 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    background-color: black;
+    height: 65px;
+    position: relative;
+}
+.header .container{
+margin-left: 250px;
+margin-right: 250px;
+position: relative;
+}
+.header .container .button{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    padding-left: 6px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-right: 4px;
+}
+.header .container .button:hover{
+    background-color: rgb(128, 128, 128);
+}
+.header .container .listbox{
+    display: none;
+    width: 192px;
+    height: 304px;
+    background-color: white;
+    z-index: 999;
+    position: absolute;
+    top: 64px;
+    left: 65px;
+    margin: 0px -3px;
+    padding: 8px 0px;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 16px;
+}
+.header .container .listbox ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header .container .listbox li{
+    color: grey;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+}
+.header .container .listbox li:hover{
+    background-color:  #EEE;
+    color: black;
+}
+
+.header .container .logo{
+    position: absolute;
+    top: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    width: 73px;
+    left: -17px;
+}
+.header .container .links{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 60px;
+padding-top: 17px;
+
+}
+.header .container .links ul{
+    display: flex;   
+}
+.header .container .links ul li{
+    margin-right: 22px;
+    list-style-type: none; 
+}
+.header .container .links ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.header .container .links ul li .aa{
+    text-decoration: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.header .container .links ul li a:hover{
+    background-color:rgb(128, 128, 128);
+}
+.img{
+    background-image: url(55.jpg);
+    height: 666px;
+    position: relative;
+}
+.img .card{
+    position: absolute;
+    background-color: white;
+    width: 573px;
+    height: 508px;
+    left: 341px;
+    top: 70px;
+}
+.img .card .head{
+    height: 110px;
+    border-bottom: 3px #EEE solid;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+.img .card .head a{
+    color:black;
+    text-decoration: none;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 400;
+}
+.img .text{
+    padding: 40px;
+}
+.img p{
+    margin: 20px 0px 20px 0;
+    font-size: 15px;
+    opacity: .8;
+}
+.img h2{
+    font-size: 3em;
+}
+.img .ptn1{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 9px;
+    display: block;
+    width: 166px;
+    margin: 30px 0;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.img .ptn1:hover{
+    background-color: grey;
+}
+.img .ptn2{
+    font-size: 17px;
+    opacity: .8;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px #eee solid;
+    transition: 0.5s ;
+}
+.img .ptn2:hover{
+border-bottom:1px black solid ;
+}
+.img2{
+    position: relative;
+    padding: 90px;
+    padding-left: 280px;
+    background-image: url(2.jpg);
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img2 a{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    margin-top:30px ;
+    border-radius: 5px;
+    width: 115px;
+    transition: 0.5s;
+}
+.img2 a:hover{
+    background-color: grey;
+}
+.section{
+    height: 750px;
+    padding-top: 40px;
+        padding-left: 300px;
+}
+.section h1{
+    color: #000000c8;
+    margin: 0 0 50px;
+}
+.section .images img{
+    margin:0 15px;
+}
+.section .text{
+position: relative;
+}
+
+.section .text .d1{
+    position: absolute;
+    width: 630px;
+    right: 850px;
+}
+
+.section .text .d2{
+    position: absolute;
+    width: 625px;
+    right: 215px;
+}
+.section .text h3{  
+    color: #000000c8;
+    font-weight: 400;
+    margin: 16px 0;
+}
+.section .text p{
+color: #000000c8;
+font-weight: 300;
+margin-bottom: 34px;
+}
+.section .text a{ 
+    text-decoration: none;
+    color: #000000c8;
+    padding-right: 2px;
+    border-bottom: 1px black solid;
+    font-weight: 400;
+}
+.section2 {
+    margin-left: 110px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 450px;
+}
+.section2 div{
+    width: 300px;
+}
+.section2 i{
+    font-size: 27px;
+    padding: 17px 0;
+}
+.section2 h3{
+    color: #00000085;
+    padding: 13px 0;
+    font-weight: 500;
+}
+.section2 p{
+    color: #00000085;
+    padding: 6px 0 52px;
+    font-weight: 500;
+}
+.section2 a{
+    text-decoration: none;
+    color: #000000c8;
+    padding-right: 2px;
+    border-bottom: 1px black solid;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+.section3{
+    height: 410px;
+    background-color: rgb(234, 232, 232);
+}
+.section3 .container{
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section3  h2{
+    margin: 0 300px;
+    padding: 50px 0;
+    font-size: 2.4em;
+    color: #3c373b;
+    font-weight: 600;
+}
+.section3 .container div{
+    background-color: white;
+    width: 32em;
+    height: 12em;
+    padding: 24px;
+    border: 1px #ddd solid;
+    position: relative;
+}
+.section3 .container a{
+    position: absolute;
+    top: 95px;
+    left: 200px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.section3 .container a:hover i { 
+    padding-left: 35px;
+}
+.section3 .container i{
+    transition: 0.5s;    
+    padding-left: 20px;  
+    font-size: 20px;
+}
+.sign{
+    height: 215px;
+}
+.sign .container{
+    height: 100%;
+    margin-left: 300px;
+    margin-right: 300px;
+
+}
+.sign .container div{
+    cursor: pointer;
+    float: left;
+    width: 513px;
+    margin-top: 80px;
+    height: 50px;
+    position: relative;
+    border-bottom: 2px black solid;
+    padding-bottom: 73px;
+}
+.sign .container div:hover a{
+    color: grey;
+}
+.sign .container div:hover i{
+    color: grey;
+}
+.sign .container i{
+    transition: 0.5s;
+    right: 0;
+    position: absolute;
+    top: 22px;
+    font-size: 2em;
+}
+.sign .container a{
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 2em;
+    padding: 25px 0;
+    font-weight: 700;
+    color: black;
+}
+.footer{
+    height: 960px;
+    background-color: black;
+}
+.footer .container{
+    width: 1100px;
+    height: 100%;
+    margin: auto;
+    padding: 64px;
+    position: relative;
+}
+.footer .container .d-one{
+    height: 180px;
+    padding: 20px;
+    position: relative;
+}
+.footer .container .d-one a{
+    position: absolute;
+    top: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    width: 73px;
+}
+.footer .container .d-one .p1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: smaller;
+}
+.footer .container .d-one .p2{
+    position: absolute;
+    top: 86px;
+    color: white;
+}
+.footer .container .d-two{
+    height: 330px;
+    color: white;
+    display: flex;
+}
+.footer .container .d-two div{
+    width: 285px;
+    line-height: 37px;
+    font-size: 15px;
+}
+.footer .container .d-three{
+    height: 72px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    color:white;
+}
+.footer .container .d-three .icons i{
+padding-right:60px;
+}
+.footer .container .d-three .dd i{
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.footer .container .d-three .dd a{
+    text-decoration: none;
+    margin: 20px;
+    color: white;
+    font-size: 14px;
+}
+.footer .container .d-five{
+height: 44px;
+margin-top: 45px;
+display: flex;
+justify-content: space-between;
+}
+.footer .container .d-five p{
+    font-size: 13px;
+    color: grey;
+}
+.footer .container .d-five div a{
+    text-decoration: none;
+    padding: 8px;
+    font-size: 15px;
+    color: grey;
+}
+.image {
+height: 564px;
+}
+.image .containe{
+    width: 1250px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.image .containe .textarea h2{
+    font-size: 2.5em;
+    margin: 0 0 38px;
+    color:#363535;
+}
+.image .containe .textarea p{
+    color:#363535;
+font-size: 17px;
+}
+.sec{
+    height: 350px;
+}
+.sec .containe{
+    width: 1250px;
+    margin: auto;
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.sec .containe .textarea h2{
+    font-size: 2.5em;
+    margin: 0 0 38px;
+    color:#363535;
+}
+.sec .containe .textarea p{
+    color:#363535;
+font-size: 17px;
+}
+.sec .containe .textarea .links a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: black;
+    font-size: 16px;
+    border-bottom: 1px black solid;
+}
+.sec2{
+    height: 350px;
+    background-color: #f7f7f7;
+}
+.sec2 .containe{
+    width: 1110px;
+    margin: auto;
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec2 .containe div{
+    width: 355px;
+    height: 320px;
+}
+.sec2 .containe .textarea h2{
+    font-size: 1em;
+    margin: 0 0 38px;
+    color:#363535;
+}
+.sec2 .containe .textarea p{
+    color:#363535;
+font-size: 17px;
+}
+.sec3 {
+    height: 315px;
+    margin-top: 200px;
+}
+.sec3 .containee{
+    width: 1110px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec3 h2{
+    margin-left: 342px;
+    color:#363535;
+font-size: 2em;
+}
+.sec3 .containee .textarea1{
+    width: 360px;
+    height: 110px;
+}
+.sec3 .containee h2{
+    margin: 0 0 10px;
+    font-size: 1em;
+}
+.sec3 .containee p{
+    font-size: 16px;
+}
+.sec4{
+    height: 714px;
+}
+.sec4 h2{
+    margin: 64px;
+    margin-left: 356px;
+    font-size: 1.8em;
+    color: #343030;
+    font-weight: 750;
+}
+.sec4 .containe{
+    width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec4 .containe div{
+    width: 518px;
+    height: 514px;
+}
+.sec4 .containe div h2{
+    margin: 20px 0;
+    font-size: 19px;
+}
+.sec4 .containe div a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px black solid;
+}
+
+.sec5{
+    height: 296px;
+    background-color:#276EF1;
+}
+.sec5 .text{
+    font-size: 22px;
+    width: 1100px;
+    margin: auto;
+    align-items: center;
+    color: white;
+    padding-top: 119px;
+}
+.sec6{
+    height: 500px;
+}
+.sec6 .container{
+    width: 1280px;
+    padding: 64px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.sec6 .container .text h2{
+    margin: 0 0 20px 0;
+    font-size: 1.8em;
+    color: #343030;
+    font-weight: 750;
+}
+.sec6 .container .text a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px black solid;
+}
+.header2{
+    height: 60px;
+    background-color: white;
+    position: relative;
+}
+.header2 a{
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    font-size: 29px;
+    left: 233px;
+    top: 6px;
+    border-right: 1px #ddd solid;
+    padding-right: 11px;
+}
+.gm{
+    height: 670px;
+    background-image: url(12.jpg);
+    background-size: cover;
+}
+.gm .text{
+    height: 130px;  
+    text-align: center;
+    padding-top: 40px;
+}
+.gm .text h2{
+    font-size: 3em;
+    padding-bottom: 52px;
+}
+.gm .container{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 94px;
+    width:1254px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.gm .container div{
+    background-color:#F6F6F6;
+width: 140px;
+height: 140px;
+text-align: center;
+font-weight: 700;
+cursor: pointer;
+}
+.gm .container div i{
+    font-size: 35px;
+    padding: 23px 0;  
+}
+.up {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #DDD;
+    color: white;
+    font-size: 31px;
+    font-weight: bold;
+    padding: 13px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+.ima{
+    height: 565px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.ima img{
+    width: 555px;
+    height: 370px;
+    margin: 100px 300px 0 0;
+}
+.ima .txt {
+    color: white;
+    padding: 200px 0 200px 381px;
+}
+.ima .txt h2{
+    font-size: 3em;
+    padding-bottom: 51px;
+}
+.big{
+    height: 800px;
+    position: relative;
+}
+.big .small{
+    width: 360px;
+    height: 440px;
+    position:absolute;
+    top: 30%;
+    left: 40%;
+}
+.container_{
+    height: calc(100vh - 65px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_ .form   {
+    width: 390px;
+    height: 550px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.239);
+border-radius: 10px;
+padding: 15px;
+    position: relative;
+}
+.container_ .form h4{
+    padding: 30px 62px 10px 10px;
+    font-size: large;
+    font-weight: 400;
+}
+.container_ .form .form-input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #eee;
+    border-radius: 7px;
+    padding-left: 13px;
+}
+.container_ .form p{
+    font-size: smaller;
+    opacity: 0.8;
+    padding: 26px 0;
+}
+.container_ .form .form-btn{
+    position: absolute;
+    right: 0;
+    padding: 7px;
+    margin: 8px;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    width: 93px;
+    cursor: pointer;
+    z-index: 999;
+}
+.container_ .form a{
+    color: black;
+}
+.header .container .listbox2{
+    display: none;
+    overflow-y: scroll;
+    width: 223px;
+    height: 268px;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    position: absolute;
+    top: 64px;
+    right: 160px;
+    margin: 0px -3px;
+    padding: 13px 35px;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 16px;
+}
+.header .container .listbox2 ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.header .container .listbox2 li{
+    color: black;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-bottom: 1px #eee solid;
+}
+.header .container .listbox2 li:hover{
+    background-color:  #EEE;
+    color: black;
+}
+.header .container .listbox2 ul i{
+    margin-left: -35px;
+    padding-right: 13px;
+    font-size: 16px;
+}
+.header .container .button2{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    padding-left: 6px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-right: 4px;
+    font-size: 14px;
+}
+
+.header .container .button2:hover{
+    background-color: rgb(128, 128, 128);
+}
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .form-1{
+    width: 390px;
+    height: 650px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.239);
+    border-radius: 15px;
+    padding: 77px 55px 33px;
+    position: relative;
+}
+.login .form{
+    width: 100%;
+}
+.login .form span{
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 41px;
+    color: #333;
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 800;
+}
+.login .form p{
+    display: block;
+    font-family: Poppins-Bold;
+    font-size: 20px;
+    color: #333;
+    line-height: 1.8;
+    margin-top: 50px;
+}
+.login input{
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+.login input:focus{
+    outline: none;
+    border-bottom: 2px  solid #276EF1;
+}
+.login .submit{
+    border-radius: 50px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #276EF1;
+    border-color:#276EF1
+}
